@@ -21,8 +21,8 @@ jobs:
           cml-publish feature_importance.png --md >> report.md
           cml-publish residuals.png --md >> report.md
 
-          echo "### Report Content:"  # Optional: A header in the logs
-          cat report.md  # Display the content of report.md in the logs
+          echo "### Report Content:"  
+          cat report.md  
 
           cml-send-comment report.md
 
